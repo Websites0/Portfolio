@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Project Alpha",
+        "description": "A web application for managing tasks and boosting productivity. I was the lead developer on this project, responsible for both front-end and back-end development.",
+        "technologies": ["React", "Node.js", "PostgreSQL"],
+        "live_url": "#",
+        "source_url": "#"
+    },
+    {
+        "title": "Project Beta",
+        "description": "An e-commerce platform with a focus on user experience and modern design. I built the entire front-end from scratch using Vue.js.",
+        "technologies": ["Vue.js", "Firebase", "Stripe"],
+        "live_url": "#",
+        "source_url": "#"
+    },
+    {
+        "title": "Project Gamma",
+        "description": "A personal blog and portfolio website built with a static site generator. This project showcases my skills in web performance and SEO.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Eleventy"],
+        "live_url": "#",
+        "source_url": "#"
+    }
+]
