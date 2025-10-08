@@ -11,6 +11,8 @@
     --btn-bg-light: #333;
     --btn-text-light: #fff;
     --btn-hover-light: #555;
+    --gradient-start-light: #007BFF;
+    --gradient-end-light: #00C6FF;
 
     --background-color-dark: #121212;
     --text-color-dark: #e0e0e0;
@@ -24,6 +26,8 @@
     --btn-bg-dark: #555;
     --btn-text-dark: #fff;
     --btn-hover-dark: #777;
+    --gradient-start-dark: #1A2980;
+    --gradient-end-dark: #26D0CE;
 }
 
 /* General Body Styles */
@@ -176,15 +180,15 @@ body.dark-mode h1, body.dark-mode h2, body.dark-mode .project h3 {
 
 #hero {
     text-align: center;
-    background: #333;
+    background: linear-gradient(to right, var(--gradient-start-light), var(--gradient-end-light));
     color: #fff;
-    padding: 40px 20px;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 60px 20px; /* Increased padding for more impact */
+    border-radius: 8px; /* Added border-radius to match cards */
 }
 
 body.dark-mode #hero {
-    background: #222;
-    color: #eee;
+    background: linear-gradient(to right, var(--gradient-start-dark), var(--gradient-end-dark));
+    color: var(--header-text-color-dark);
 }
 
 #hero h1 {
@@ -298,26 +302,29 @@ body.dark-mode #skills ul li {
 /* Contact Section */
 .btn {
     display: inline-block;
-    background: var(--btn-bg-light);
-    color: var(--btn-text-light);
-    padding: 10px 20px;
+    background: linear-gradient(to right, var(--gradient-start-light), var(--gradient-end-light));
+    color: #fff;
+    padding: 12px 24px;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
     margin-top: 10px;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-    background: var(--btn-hover-light);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 body.dark-mode .btn {
-    background: var(--btn-bg-dark);
+    background: linear-gradient(to right, var(--gradient-start-dark), var(--gradient-end-dark));
     color: var(--btn-text-dark);
 }
 
 body.dark-mode .btn:hover {
-    background: var(--btn-hover-dark);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 /* Contact Form Styles */
