@@ -35,23 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Scroll animations
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.5
-    });
-
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-
     // Dynamic project loading
     const projectsContainer = document.getElementById('projects-container');
     if (projectsContainer) {
@@ -134,5 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
             errorElement.textContent = message;
             errorElement.style.display = 'block';
         }
+    }
+
+    // Dynamic copyright year
+    const copyrightYear = document.getElementById('copyright-year');
+    if (copyrightYear) {
+        copyrightYear.textContent = new Date().getFullYear();
     }
 });

@@ -20,6 +20,26 @@ This portfolio is packed with modern features to create a great user experience:
 
 ---
 
+## 📂 Project Structure
+
+```
+.
+├── 📄 index.html        # The main landing page
+├── 📄 about.html        # The "About Me" page
+├── 📄 projects.html     # The "Projects" page (content is loaded dynamically)
+├── 📄 skills.html       # The "Skills" page
+├── 📄 contact.html      # The "Contact" page with a functional form
+│
+├── 📁 assets/
+│   ├── 🎨 style.css       # All styles for the website
+│   └── ⚙️ script.js       # All JavaScript for interactive features
+│
+├── 📦 projects.json     # JSON file containing data for the projects section
+└── 📖 README.md         # This file!
+```
+
+---
+
 ## 🚀 Technologies Used
 
 This project was built from scratch using fundamental web technologies:
