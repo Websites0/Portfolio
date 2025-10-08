@@ -197,21 +197,43 @@ body.dark-mode #hero h1 {
 }
 
 /* Projects Section */
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
 .project {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border-color-light);
-    transition: border-bottom-color 0.3s;
+    background: var(--card-bg-color-light);
+    border: 1px solid var(--border-color-light);
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 body.dark-mode .project {
-    border-bottom-color: var(--border-color-dark);
+    background: var(--card-bg-color-dark);
+    border-color: var(--border-color-dark);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
-.project:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+body.dark-mode .project:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.project .project-links {
+    margin-top: auto;
 }
 
 .project a {
@@ -229,8 +251,27 @@ body.dark-mode .project a {
 }
 
 /* Skills Section */
-#skills .skill-category {
-    margin-bottom: 20px;
+#skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-category {
+    background: var(--card-bg-color-light);
+    border: 1px solid var(--border-color-light);
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .skill-category {
+    background: var(--card-bg-color-dark);
+    border-color: var(--border-color-dark);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 #skills ul {
