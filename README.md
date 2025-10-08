@@ -2,7 +2,7 @@
 
 This is a fully responsive and interactive personal portfolio website for MD Mahfiz Kaif, a passionate front-end developer. The site is designed to showcase projects, skills, and provide an easy way for potential employers to get in touch.
 
-**[View Live Demo](https://your-live-demo-link.com)** (Replace this with your actual live link when you deploy!)
+**[View Live Demo](https://portfolio-sepia-xi-42.vercel.app/)**
 
 ---
 
@@ -13,7 +13,6 @@ This portfolio is packed with modern features to create a great user experience:
 -   **Fully Responsive:** The layout adapts beautifully to all screen sizes, from mobile phones to large desktop monitors.
 -   **Dark Mode:** A sleek dark mode that can be toggled by the user and is saved in their browser for future visits.
 -   **Dynamic Project Loading:** The projects showcased on the portfolio are loaded dynamically from a simple `projects.json` file, making it easy to update the project list without touching the HTML.
--   **Smooth Scroll Animations:** Subtle fade-in animations are triggered as the user scrolls down the page, creating an engaging and modern feel.
 -   **Interactive Gradient Theme:** The entire website features a beautiful, layered gradient theme that makes the design pop.
 -   **Client-Side Form Validation:** The contact form provides instant feedback to the user, ensuring that all fields are filled out correctly before submission.
 -   **Card-Based Layout:** The "Projects" and "Skills" sections use a modern, card-based layout with Flexbox for a clean and organized presentation.
